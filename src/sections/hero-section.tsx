@@ -8,7 +8,7 @@ export default function HeroSection() {
 
       <div className="flex flex-1 gap-4 flex-col md:flex-row">
 
-        <div className="md:w-1/3 gap-4 flex flex-col">
+        <div className="md:w-1/2 lg:w-1/3 gap-4 flex flex-col">
 
           <div className="flex items-center gap-4">
             <Image
@@ -24,7 +24,7 @@ export default function HeroSection() {
               Luis Galleguillos
               </h4>
               <p className="text-neutral-400 text-xl">
-              Desenvolvedor Full Stack
+              Desenvolvedor Full-Stack
               </p>
             </div>
 
@@ -77,7 +77,7 @@ export default function HeroSection() {
               <Mail/>
               </Link>
               
-              </div>
+            </div>
           </div>
 
         </div>
