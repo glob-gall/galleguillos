@@ -42,6 +42,15 @@ export default function ProjectsSection() {
             className=" rounded-lg border-neutral-600 border"
           />
         </Link>
+        <Link href="https://github.com/glob-gall/investimentos">
+          <Image
+            alt="invest"
+            src="/pages/invest.jpg"
+            height={198}
+            width={390}
+            className=" rounded-lg border-neutral-600 border"
+          />
+        </Link>
 
       </div>
 
