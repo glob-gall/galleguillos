@@ -40,7 +40,7 @@ export default function HeroSection() {
 
 
             <div className="flex gap-2 mt-3">
-            <Link className="flex  gap-3 py-2 px-5 hover:bg-neutral-300 bg-neutral-100 rounded-full duration-200" href="https://api.whatsapp.com/send?phone=554999107528">
+            <Link className="flex  gap-3 py-2 px-5 hover:bg-neutral-300 bg-neutral-100 rounded-full duration-200" href="https://wa.me/+5549991075283">
                 <Image
                   alt="Luis Felipe Galleguillos whatsapp"
                   src="/whatsapp.svg"
