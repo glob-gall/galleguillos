@@ -7,18 +7,22 @@ export default function QrCaesBanner() {
   return (
     <div className="bg-purple-600 p-2 flex">
       <div className="container flex items-center justify-center gap-2 mx-auto">
-        <Image
-          alt="qrcães logo"
-          src="/qrcaes.jpg"
-          height={42}
-          width={42}
-          className="rounded-2xl"
-        />
+        <Link href="https://www.qrcaes.com.br/">
+            <Image
+              alt="qrcães logo"
+              src="/qrcaes.jpg"
+              height={42}
+              width={42}
+              className="rounded-2xl"
+            />
+        </Link>
 
         <div className="flex flex-col">
-          <h4 className="text-xl font-bold">
-          Conheça o QRCães
-          </h4>
+        <Link href="https://www.qrcaes.com.br/">
+            <h4 className="text-xl font-bold">
+            Conheça o QRCães
+            </h4>
+        </Link>
           <p className="text-neutral-200 text-sm">
             Gerador de Identificador QRCode para animais de estimação
           </p>
