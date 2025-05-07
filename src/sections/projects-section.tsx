@@ -4,12 +4,19 @@ import Link from "next/link";
 
 export default function ProjectsSection() {
   return (
-    <section className="container flex mx-auto not-md: px-4 ">
+    <section className="container flex mx-auto not-md: px-4 relative">
       <div className="flex flex-1 flex-col items-center">
+      <Image
+        alt="blur background"
+        src="/blur.svg"
+        height={572}
+        width={648}
+        className="absolute -z-10 -top-64"
+      />
         <h3 className="text-3xl font-bold">
         Projetos em Destaque
         </h3>
-        <p className="text-neutral-400">
+        <p className="text-neutral-200">
         Esses são alguns dos trabalhos que desenvolvi e que posso divulgar.
         </p>
 
