@@ -22,40 +22,52 @@ export default function ProjectsSection() {
 
       <div className="flex flex-wrap gap-4 mt-8 items-center justify-center">
 
-        <Link href="https://www.qrcaes.com.br/">
+        <Link 
+          href="https://www.qrcaes.com.br/"
+          className="overflow-hidden rounded-lg border-neutral-600 border"
+        >
           <Image
             alt="qrcaes"
             src="/pages/qrcaes.jpg"
             height={198}
             width={390}
-            className=" rounded-lg border-neutral-600 border"
+            className="hover:scale-105 duration-200"
           />
         </Link>
-        <Link href="https://www.solarenergianorte.com.br/">
+        <Link 
+          href="https://www.solarenergianorte.com.br/"
+          className="overflow-hidden rounded-lg border-neutral-600 border"
+        >
           <Image
             alt="solar norte"
             src="/pages/solar.jpg"
             height={198}
             width={390}
-            className=" rounded-lg border-neutral-600 border"
+            className="hover:scale-105 duration-200"
           />
         </Link>
-        <Link href="https://taco.galleguillos.com.br/">
+        <Link 
+          href="https://taco.galleguillos.com.br/"
+          className="overflow-hidden rounded-lg border-neutral-600 border"
+        >
           <Image
             alt="taco"
             src="/pages/taco.jpg"
             height={198}
             width={390}
-            className=" rounded-lg border-neutral-600 border"
+            className="hover:scale-105 duration-200"
           />
         </Link>
-        <Link href="https://github.com/glob-gall/investimentos">
+        <Link 
+          href="https://github.com/glob-gall/investimentos" 
+          className="overflow-hidden rounded-lg border-neutral-600 border"
+        >
           <Image
             alt="invest"
             src="/pages/invest.jpg"
             height={198}
             width={390}
-            className=" rounded-lg border-neutral-600 border"
+            className="hover:scale-105 duration-200"
           />
         </Link>
 
