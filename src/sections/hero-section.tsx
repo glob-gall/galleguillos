@@ -6,7 +6,7 @@ export default function HeroSection() {
   return (
     <section className="container flex mx-auto not-md: px-4">
 
-      <div className="flex flex-1 gap-4 flex-col md:flex-row">
+      <div className="flex flex-1 gap-12 flex-col md:flex-row">
 
         <div className="md:w-1/2 lg:w-1/3 gap-4 flex flex-col">
 
@@ -101,7 +101,7 @@ export default function HeroSection() {
               <h3 className="text-neutral-900 font-bold text-xl z-20">
                 Vamos trabalhar juntos?
               </h3>
-              <span className="text-neutral-700 z-20">
+              <span className="text-neutral-700 z-20 font-bold">
                 Freelas | Parcerias | Projetos
               </span>
         </div>
