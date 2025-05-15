@@ -70,6 +70,30 @@ export default function ProjectsSection() {
             className="hover:scale-105 duration-200"
           />
         </Link>
+        <Link 
+          href="https://github.com/glob-gall/daily-tasks" 
+          className="overflow-hidden rounded-lg border-neutral-600 border"
+        >
+          <Image
+            alt="daily tasks"
+            src="/pages/dailytasks.jpg"
+            height={198}
+            width={390}
+            className="hover:scale-105 duration-200"
+          />
+        </Link>
+        <Link 
+          href="https://github.com/glob-gall/utfpr" 
+          className="overflow-hidden rounded-lg border-neutral-600 border"
+        >
+          <Image
+            alt="trabalhos academicos"
+            src="/pages/utfpr.jpg"
+            height={198}
+            width={390}
+            className="hover:scale-105 duration-200"
+          />
+        </Link>
 
       </div>
 
