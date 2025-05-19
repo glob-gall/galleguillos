@@ -89,16 +89,16 @@ export default function HeroSection() {
                 src="/colorful.svg"
                 height={256}
                 width={256}
-                className="absolute top-0 left-0"
+                className="absolute top-0 left-0 w-[86px] sm:w-[124px] lg:w-[256px]"
               />
               <Image
                 alt="Luis Felipe Galleguillos linkedin"
                 src="/colorful-2.svg"
                 height={256}
                 width={256}
-                className="absolute bottom-0 right-0"
+                className="absolute bottom-0 right-0 w-[86px] sm:w-[124px] lg:w-[256px]"
               />
-              <h3 className="text-neutral-900 font-bold text-xl z-20">
+              <h3 className="text-neutral-900 font-bold text-xl z-20 ">
                 Vamos trabalhar juntos?
               </h3>
               <span className="text-neutral-700 z-20 font-bold">
