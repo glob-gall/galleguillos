@@ -35,6 +35,18 @@ export default function ProjectsSection() {
           />
         </Link>
         <Link 
+          href="https://shadtheme.galleguillos.com.br/"
+          className="overflow-hidden rounded-lg border-neutral-600 border"
+        >
+          <Image
+            alt="shadtheme"
+            src="/pages/shadtheme.png"
+            height={198}
+            width={390}
+            className="hover:scale-105 duration-200"
+          />
+        </Link>
+        <Link 
           href="https://github.com/glob-gall/course-platform"
           className="overflow-hidden rounded-lg border-neutral-600 border"
         >

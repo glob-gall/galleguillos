@@ -135,3 +135,34 @@
   width: fit-content;
   pointer-events: none; /* Prevents user interaction */
 }
+
+
+@keyframes starAni {
+  0% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(-100%);
+    scale: 1.3;
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+.star-animation {
+  animation-name: starAni;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  /* animation: starAni 2.5s linear infinite; */
+  width: fit-content;
+  pointer-events: none; /* Prevents user interaction */
+}

@@ -1,3 +1,4 @@
+import { StarParticle } from "@/components/StarParticle";
 import { Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -40,7 +41,12 @@ export default function HeroSection() {
 
 
             <div className="flex gap-2 mt-3">
-            <Link className="flex  gap-3 py-2 px-5 hover:bg-neutral-300 bg-neutral-100 rounded-full duration-200" href="https://wa.me/+5549991075283">
+            <Link className=" relative flex  gap-3 py-2 px-5 hover:bg-neutral-300 bg-neutral-100 rounded-full duration-200" href="https://wa.me/+5549991075283">
+                <StarParticle className="top-0 -left-3 scale-75 [animation-delay:0s]"/>
+                <StarParticle className="-top-3 right-1 scale-[40%] [animation-delay:1s]"/>
+                <StarParticle className="-top-2 right-10 scale-50 [animation-delay:2s]"/>
+                <StarParticle className="top-7 rigt-0 scale-[35%] [animation-delay:6s]"/>
+                <StarParticle className="top-3 -right-2 scale-50 [animation-delay:3s]"/>
                 <Image
                   alt="Luis Felipe Galleguillos whatsapp"
                   src="/whatsapp.svg"
