@@ -1,8 +1,10 @@
+import { Github } from "@/components/icon/github";
+import { Linkedin } from "@/components/icon/linkedin";
+import { Whatsapp } from "@/components/icon/whatsapp";
 import { StarParticle } from "@/components/StarParticle";
 import { Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-
 export default function HeroSection() {
   return (
     <section className="container flex mx-auto not-md: px-4">
@@ -40,47 +42,30 @@ export default function HeroSection() {
             </p>
 
 
-            <div className="flex gap-2 mt-3">
-            <Link className=" relative flex  gap-3 py-2 px-5 hover:bg-neutral-300 bg-neutral-100 rounded-full duration-200" href="https://wa.me/+5549991075283">
+            <div className="flex gap-2 mt-3 items-center">
+              
+              <Link className=" relative flex  gap-3 py-2 px-5 hover:bg-neutral-300 bg-neutral-100 rounded-full duration-200" href="https://wa.me/+5549991075283">
                 <StarParticle className="top-0 -left-3 scale-75 [animation-delay:0s]"/>
                 <StarParticle className="-top-3 right-1 scale-[40%] [animation-delay:1s]"/>
                 <StarParticle className="-top-2 right-10 scale-50 [animation-delay:2s]"/>
                 <StarParticle className="top-7 rigt-0 scale-[35%] [animation-delay:6s]"/>
                 <StarParticle className="top-3 -right-2 scale-50 [animation-delay:3s]"/>
-                <Image
-                  alt="Luis Felipe Galleguillos whatsapp"
-                  src="/whatsapp.svg"
-                  height={24}
-                  width={24}
-                  className=""
-                />
-                <span className="text-neutral-900">
+                <Whatsapp className="text-neutral-900" fontSize={22}/>
+                <span className="text-neutral-900" >
                   WhatsApp
                 </span>
               </Link>
-
-              <Link className="p-2 hover:bg-neutral-800 rounded-full duration-200" href="https://github.com/glob-gall">
-                <Image
-                  alt="Luis Felipe Galleguillos github"
-                  src="/github.svg"
-                  height={24}
-                  width={24}
-                  className=" invert"
-                />
+                
+              <Link className="p-2 hover:bg-secondary rounded-full" href="https://www.linkedin.com/in/luis-felipe-galleguillos/">
+                <Linkedin fontSize={24} />
               </Link>
 
-              <Link className="p-2 hover:bg-neutral-800 rounded-full duration-200" href="https://www.linkedin.com/in/luis-felipe-galleguillos/">
-                <Image
-                  alt="Luis Felipe Galleguillos linkedin"
-                  src="/linkedin.svg"
-                  height={24}
-                  width={24}
-                  className=" invert"
-                />
+              <Link className="p-2 hover:bg-secondary rounded-full" href="https://github.com/glob-gall">
+                <Github fontSize={24}/>
               </Link>
-              
-              <Link className="p-2 hover:bg-neutral-800 rounded-full duration-200" href="mailto:luisfelipegalleguillos@hotmail.com">
-              <Mail/>
+
+              <Link className="p-2 hover:bg-secondary rounded-full" href="mailto:luisfelipegalleguillos@hotmail.com">
+                <Mail className="text-3xl"/>
               </Link>
               
             </div>

@@ -27,19 +27,19 @@ const techs = [
   },
   {
     id:4,
-    name: "nest",
+    name: "nestjs",
     height:80,
     width:80,
   },
   {
     id:5,
-    name: "next",
+    name: "nextjs",
     height:80,
     width:132,
   },
   {
     id:6,
-    name: "node",
+    name: "nodejs",
     height:80,
     width:198,
   },

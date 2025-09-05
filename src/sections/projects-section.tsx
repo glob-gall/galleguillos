@@ -1,10 +1,11 @@
+import { ProjectCard } from "@/components/project-card";
 import Image from "next/image";
-import Link from "next/link";
 
 
 export default function ProjectsSection() {
   return (
     <section className="container flex mx-auto not-md: px-4 relative">
+      
       <div className="flex flex-1 flex-col items-center">
       <Image
         alt="blur background"
@@ -14,110 +15,64 @@ export default function ProjectsSection() {
         className="absolute -z-10 -top-64"
       />
         <h3 className="text-3xl font-bold">
-        Projetos em Destaque
+        ALGUNS PROJETOS
         </h3>
         <p className="text-neutral-200">
         Esses são alguns dos trabalhos que desenvolvi e que posso divulgar.
         </p>
 
-      <div className="flex flex-wrap gap-4 mt-8 items-center justify-center">
+      <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+        <ProjectCard
+          imgAlt="qrcaes"
+          imgSrc="/pages/qrcaes.jpg"
+          techs={['typescript','react','tailwind','shadcn','supabase','nextjs']}
+          siteUrl="https://www.qrcaes.com.br/"
+        />
+        <ProjectCard
+          imgAlt="shadtheme"
+          imgSrc="/pages/shadtheme.png"
+          techs={['typescript','react','tailwind','shadcn']}
+          siteUrl="https://shadtheme.galleguillos.com.br/"
+          githubUrl="https://github.com/glob-gall/shadcn-theme-creator"
+        />
+        <ProjectCard
+          imgAlt="course platform"
+          imgSrc="/pages/course-back.jpg"
+          techs={['typescript','nestjs','vitest', 'postgres']}
+          githubUrl="https://github.com/glob-gall/course-platform"
+        />
+        <ProjectCard
+          imgAlt="solar norte"
+          imgSrc="/pages/solar.jpg"
+          techs={['typescript', 'react', 'tailwind', 'nextjs']}
+          siteUrl="https://www.solarenergianorte.com.br/"
+        />
+        <ProjectCard
+          imgAlt="tabela taco"
+          imgSrc="/pages/taco.jpg"
+          techs={['typescript', 'react', 'tailwind', 'nextjs', 'python']}
+          siteUrl="https://taco.galleguillos.com.br/"
+        />
+        <ProjectCard
+          imgAlt="invest"
+          imgSrc="/pages/invest.jpg"
+          techs={['typescript', 'react', 'tailwind', 'nextjs', 'nestjs', 'vitest', 'postgres']}
+          githubUrl="https://github.com/glob-gall/investimentos"
+        />
 
-        <Link 
-          href="https://www.qrcaes.com.br/"
-          className="overflow-hidden rounded-lg border-neutral-600 border"
-        >
-          <Image
-            alt="qrcaes"
-            src="/pages/qrcaes.jpg"
-            height={198}
-            width={390}
-            className="hover:scale-105 duration-200"
-          />
-        </Link>
-        <Link 
-          href="https://shadtheme.galleguillos.com.br/"
-          className="overflow-hidden rounded-lg border-neutral-600 border"
-        >
-          <Image
-            alt="shadtheme"
-            src="/pages/shadtheme.png"
-            height={198}
-            width={390}
-            className="hover:scale-105 duration-200"
-          />
-        </Link>
-        <Link 
-          href="https://github.com/glob-gall/course-platform"
-          className="overflow-hidden rounded-lg border-neutral-600 border"
-        >
-          <Image
-            alt="course platform"
-            src="/pages/course-back.jpg"
-            height={198}
-            width={390}
-            className="hover:scale-105 duration-200"
-          />
-        </Link>
-        <Link 
-          href="https://www.solarenergianorte.com.br/"
-          className="overflow-hidden rounded-lg border-neutral-600 border"
-        >
-          <Image
-            alt="solar norte"
-            src="/pages/solar.jpg"
-            height={198}
-            width={390}
-            className="hover:scale-105 duration-200"
-          />
-        </Link>
-        <Link 
-          href="https://taco.galleguillos.com.br/"
-          className="overflow-hidden rounded-lg border-neutral-600 border"
-        >
-          <Image
-            alt="taco"
-            src="/pages/taco.jpg"
-            height={198}
-            width={390}
-            className="hover:scale-105 duration-200"
-          />
-        </Link>
-        <Link 
-          href="https://github.com/glob-gall/investimentos" 
-          className="overflow-hidden rounded-lg border-neutral-600 border"
-        >
-          <Image
-            alt="invest"
-            src="/pages/invest.jpg"
-            height={198}
-            width={390}
-            className="hover:scale-105 duration-200"
-          />
-        </Link>
-        <Link 
-          href="https://github.com/glob-gall/daily-tasks" 
-          className="overflow-hidden rounded-lg border-neutral-600 border"
-        >
-          <Image
-            alt="daily tasks"
-            src="/pages/dailytasks.jpg"
-            height={198}
-            width={390}
-            className="hover:scale-105 duration-200"
-          />
-        </Link>
-        <Link 
-          href="https://github.com/glob-gall/utfpr" 
-          className="overflow-hidden rounded-lg border-neutral-600 border"
-        >
-          <Image
-            alt="trabalhos academicos"
-            src="/pages/utfpr.jpg"
-            height={198}
-            width={390}
-            className="hover:scale-105 duration-200"
-          />
-        </Link>
+        <ProjectCard
+          imgAlt="daily tasks"
+          imgSrc="/pages/dailytasks.jpg"
+          techs={['typescript', 'react', 'expo']}
+          githubUrl="https://github.com/glob-gall/daily-tasks"
+        />
+        <ProjectCard
+          imgAlt="trabalhos academicos"
+          imgSrc="/pages/utfpr.jpg"
+          techs={['typescript', 'react', 'tailwind', 'nextjs', 'nestjs', 'vitest', 'postgres']}
+          githubUrl="https://github.com/glob-gall/utfpr"
+        />
+
 
       </div>
 
