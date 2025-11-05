@@ -10,18 +10,27 @@ export default function ProjectsSection() {
       <Image
         alt="blur background"
         src="/blur.svg"
-        height={572}
-        width={648}
-        className="absolute -z-10 -top-64"
+        height={1080}
+        width={1223}
+        // height={572}
+        // width={648}
+        className="absolute -z-10 -top-64 h-full w-full"
       />
         <h3 className="text-3xl font-bold">
         ALGUNS PROJETOS
         </h3>
         <p className="text-neutral-200">
-        Esses são alguns dos trabalhos que desenvolvi e que posso divulgar.
+        Esses são alguns dos meus trabalhos pessoais.
         </p>
 
       <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+        <ProjectCard
+          imgAlt="daily-rosary"
+          imgSrc="/pages/dailyrosary.jpg"
+          techs={['typescript','react','tailwind',  'jest', 'react-testing-library']}
+          githubUrl="https://github.com/glob-gall/daily-rosary"
+          siteUrl="https://github.com/glob-gall/daily-rosary/releases/tag/beta-1.1.0"
+        />
         <ProjectCard
           imgAlt="qrcaes"
           imgSrc="/pages/qrcaes.jpg"

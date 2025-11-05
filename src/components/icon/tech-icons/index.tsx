@@ -1,7 +1,7 @@
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip"
 import Image from "next/image"
 
-export type Tech = "nestjs" | "react" | "tailwind" | "nextjs" | "supabase" | "shadcn" | "typescript" | "expo" | "python" | 'vitest' | 'postgres'
+export type Tech = "nestjs" | "react" | "tailwind" | "nextjs" | "supabase" | "shadcn" | "typescript" | "expo" | "python" | 'vitest' | 'postgres' | 'jest' | 'react-testing-library'
 
 type TechIconProps = {
  tech: Tech
