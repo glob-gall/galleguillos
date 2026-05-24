@@ -1,15 +1,33 @@
-import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip"
-import Image from "next/image"
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import Image from "next/image";
 
-export type Tech = "nestjs" | "react" | "tailwind" | "nextjs" | "supabase" | "shadcn" | "typescript" | "expo" | "python" | 'vitest' | 'postgres' | 'jest' | 'react-testing-library'
+export type Tech =
+  | "svelte"
+  | "nestjs"
+  | "react"
+  | "tailwind"
+  | "nextjs"
+  | "supabase"
+  | "shadcn"
+  | "typescript"
+  | "expo"
+  | "python"
+  | "vitest"
+  | "postgres"
+  | "jest"
+  | "react-testing-library";
 
 type TechIconProps = {
- tech: Tech
- height?: number
- width?: number
-}
+  tech: Tech;
+  height?: number;
+  width?: number;
+};
 
-export function TechIcon({tech,height,width}:TechIconProps) {
+export function TechIcon({ tech, height, width }: TechIconProps) {
   return (
     <Tooltip>
       <TooltipTrigger>
@@ -23,9 +41,7 @@ export function TechIcon({tech,height,width}:TechIconProps) {
           />
         </div>
       </TooltipTrigger>
-      <TooltipContent>
-        {tech}
-      </TooltipContent>
+      <TooltipContent>{tech}</TooltipContent>
     </Tooltip>
-  )
+  );
 }
