@@ -1,9 +1,12 @@
 import { ProjectCard } from "@/components/project-card";
+import { DictionaryProjects } from "@/i18n/types";
 import Image from "next/image";
-
-export default function ProjectsSection() {
+type ProjectsSectionProps = {
+  dict: DictionaryProjects;
+};
+export default function ProjectsSection({ dict }: ProjectsSectionProps) {
   return (
-    <section className="container flex mx-auto not-md: px-4 relative">
+    <section className="container flex mx-auto px-10 relative">
       <div className="flex flex-1 flex-col items-center">
         <Image
           alt="blur background"
@@ -12,14 +15,12 @@ export default function ProjectsSection() {
           width={1223}
           // height={572}
           // width={648}
-          className="absolute -z-10 -top-64 h-full w-full"
+          className="absolute -z-10 lg:-top-24 not-lg:invisible  lg:w-2/3"
         />
-        <h3 className="text-3xl font-bold">ALGUNS PROJETOS</h3>
-        <p className="text-neutral-200">
-          Esses são alguns dos meus trabalhos pessoais.
-        </p>
+        <h3 className="text-3xl font-bold">{dict.title}</h3>
+        <p className="text-neutral-200">{dict.subtitle}</p>
 
-        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+        <div className="mt-6 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-2">
           <ProjectCard
             imgAlt="local-share"
             imgSrc="/pages/localshare.jpg"

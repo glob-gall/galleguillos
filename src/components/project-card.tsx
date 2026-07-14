@@ -1,22 +1,28 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Github } from "./icon/github"
-import { ExternalLink } from "lucide-react"
-import { Button } from "./ui/button"
-import { Tech, TechIcon } from "./icon/tech-icons"
+import { ExternalLink } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { Github } from "./icon/github";
+import { Tech, TechIcon } from "./icon/tech-icons";
+import { Button } from "./ui/button";
 
 type ProjectCardProps = {
-  siteUrl?: string
-  githubUrl?: string
-  techs: Tech[]
+  siteUrl?: string;
+  githubUrl?: string;
+  techs: Tech[];
 
-  imgSrc:string
-  imgAlt:string
-}
+  imgSrc: string;
+  imgAlt: string;
+};
 
-export function ProjectCard({imgAlt,imgSrc,techs,githubUrl,siteUrl}:ProjectCardProps) {
+export function ProjectCard({
+  imgAlt,
+  imgSrc,
+  techs,
+  githubUrl,
+  siteUrl,
+}: ProjectCardProps) {
   return (
-    <div className="bg-neutral-700/20 rounded-lg relative group overflow-hidden border">
+    <div className="bg-neutral-700/20 rounded-lg relative group overflow-hidden border backdrop-blur-2xl">
       <div className="overflow-hidden">
         <Image
           alt={imgAlt}
@@ -29,30 +35,28 @@ export function ProjectCard({imgAlt,imgSrc,techs,githubUrl,siteUrl}:ProjectCardP
 
       <div className=" flex items-center justify-between p-2 border-t">
         <div className="flex gap-2">
-          {techs.map(t => <TechIcon tech={t} key={t}/>)}
+          {techs.map((t) => (
+            <TechIcon tech={t} key={t} />
+          ))}
         </div>
 
         <div className="flex gap-2">
-
           {githubUrl && (
-            <Button className="rounded-full cursor-pointer" size={'icon'}>
-              <Link href={githubUrl} >
-                <Github/> 
+            <Button className="rounded-full cursor-pointer" size={"icon"}>
+              <Link href={githubUrl} target="_blank">
+                <Github />
               </Link>
             </Button>
           )}
           {siteUrl && (
-            <Link href={siteUrl} className=""> 
-              <Button className="rounded-full cursor-pointer" size={'icon'}>
-                <ExternalLink size={18}/> 
+            <Link href={siteUrl} target="_blank" className="">
+              <Button className="rounded-full cursor-pointer" size={"icon"}>
+                <ExternalLink size={18} />
               </Button>
             </Link>
           )}
-
         </div>
       </div>
-      
-  </div>
-
-  )
+    </div>
+  );
 }

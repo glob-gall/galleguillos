@@ -1,0 +1,47 @@
+{
+  "hero": {
+    "title": "Full-Stack Developer",
+    "description": "Full Stack Developer with 3+ years building scalable web, mobile apps and APIs. Specialized in React/Node.js and Svelte ecosystems, with production experience. Strong foundation in algorithms, data structures, and code optimization. Passionate about solving complex problems and delivering performant software solutions. Available for remote roles. English C1.",
+    "banner_title": "Lets work together?",
+    "banner_sub": "Freelance Work | Partnerships | Projects",
+    "contacts": "Contacts"
+  },
+  "projects": {
+    "title": "SOME OF MY WORK",
+    "subtitle": "A collection of my personal projects."
+  },
+  "techs": {
+    "title": "MAIN TECHNOLOGIES"
+  },
+  "footer": {
+    "rights1": "Luis Galleguillos",
+    "rights2": "All rights reserved"
+  },
+  "meta": {
+    "title": "Developer | Luís Felipe Galleguillos Campos",
+    "description": "Let's develop something togheter! SaaS, ecommerces, systems, apps and much more.",
+    "openGraph": {
+      "title": "Developer | Luís Felipe Galleguillos Campos",
+      "description": "Let's develop something togheter! SaaS, ecommerces, systems, apps and much more.",
+      "url": "https://galleguillos.com.br/",
+      "siteName": "Galleguillos",
+      "images": [
+        {
+          "url": "https://galleguillos.com.br/og.jpg",
+          "width": 1200,
+          "height": 630,
+          "alt": "Preview image for Galleguillos"
+        }
+      ],
+      "type": "website"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Desenvolvedor | Luís Felipe Galleguillos Campos",
+      "description": "Let's develop something togheter! SaaS, ecommerces, systems, apps and much more.",
+      "images": [
+        "https://galleguillos.com.br/og.jpg"
+      ]
+    }
+  }
+}

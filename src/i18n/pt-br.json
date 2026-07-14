@@ -1,0 +1,47 @@
+{
+  "hero": {
+    "title": "Desenvolvedor Full-Stack",
+    "description": "Desenvolvedor Full Stack com mais de 3 anos de Experiência construindo aplicações web e mobile escaláveis. Especializado em sistemas React, Node.js, Svelte e TypeScript. Sólida base em algoritmos, estruturas de dados e otimização de código. Apaixonado por resolver problemas complexos e entregar soluções de software de alto desempenho. Disponível para Trabalho Remoto. Inglês C1",
+    "banner_title": "Vamos trabalhar juntos?",
+    "banner_sub": "Freelas | Parcerias | Projetos",
+    "contacts": "Contatos"
+  },
+  "projects": {
+    "title": "ALGUNS PROJETOS",
+    "subtitle": "Esses são alguns dos meus trabalhos pessoais."
+  },
+  "techs": {
+    "title": "PRINCIPAIS TECNOLOGIAS"
+  },
+  "footer": {
+    "rights1": "Luis Galleguillos",
+    "rights2": "Todos os direitos reservados"
+  },
+  "meta": {
+    "title": "Desenvolvedor | Luís Felipe Galleguillos Campos",
+    "description": "Desenvolva seu projeto comigo! SaaS, ecommerces, sistemas, aplicativos e muito mais.",
+    "openGraph": {
+      "title": "Desenvolvedor | Luís Felipe Galleguillos Campos",
+      "description": "Desenvolva seu projeto comigo! SaaS, ecommerces, sistemas, aplicativos e muito mais.",
+      "url": "https://galleguillos.com.br/",
+      "siteName": "Galleguillos",
+      "images": [
+        {
+          "url": "https://galleguillos.com.br/og.jpg",
+          "width": 1200,
+          "height": 630,
+          "alt": "Preview image for Galleguillos"
+        }
+      ],
+      "type": "website"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Desenvolvedor | Luís Felipe Galleguillos Campos",
+      "description": "Desenvolva seu projeto comigo! SaaS, ecommerces, sistemas, aplicativos e muito mais.",
+      "images": [
+        "https://galleguillos.com.br/og.jpg"
+      ]
+    }
+  }
+}
