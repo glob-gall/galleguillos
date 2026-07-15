@@ -9,5 +9,5 @@ const dictionaries = {
   pt: () => import("./pt-br.json").then((mod) => mod.default),
 };
 
-export const getDictionary = async (locale: Locale) =>
-  (dictionaries[locale] ?? dictionaries[defaultLocale])();
+export const getDictionary = async (locale: string) =>
+  (dictionaries?.[locale as Locale] ?? dictionaries[defaultLocale])();

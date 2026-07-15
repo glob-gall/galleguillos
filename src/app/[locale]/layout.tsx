@@ -1,11 +1,12 @@
-import { getDictionary, Locale, locales } from "@/i18n/locales";
+import { getDictionary, locales } from "@/i18n/locales";
 import { Analytics } from "@vercel/analytics/next";
 import { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { notFound } from "next/navigation";
 import "../globals.css";
 
 type RouteParams = {
-  locale: Locale;
+  locale: string;
 };
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +28,7 @@ export async function generateMetadata({
   params: Promise<RouteParams>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  if (!["en", "pt"].includes(locale)) notFound();
 
   const dict = await getDictionary(locale);
 
