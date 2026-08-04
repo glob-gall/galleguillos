@@ -22,11 +22,20 @@ export default function ProjectsSection({ dict }: ProjectsSectionProps) {
 
         <div className="mt-6 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-2">
           <ProjectCard
+            imgAlt="geradorplacapix"
+            imgSrc="/pages/geradorplacapix.jpg"
+            techs={["typescript", "tailwind", "svelte"]}
+            githubUrl="https://github.com/glob-gall/gera-pix"
+            siteUrl="https://geradorplacapix.com.br/"
+          />
+
+          <ProjectCard
             imgAlt="local-share"
             imgSrc="/pages/localshare.jpg"
             techs={["typescript", "tailwind", "svelte"]}
             githubUrl="https://github.com/glob-gall/localshare"
           />
+
           <ProjectCard
             imgAlt="daily-rosary"
             imgSrc="/pages/dailyrosary.jpg"
