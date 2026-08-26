@@ -76,39 +76,34 @@ export default function HeroSection({ dict }: HeroSectionProps) {
       </div>
 
       <div className="flex flex-col sm:flex-row lg:flex-col gap-2 sm:col-span-2 lg:col-span-1">
-        <div className="flex flex-row gap-2">
+        <div className="flex flex-row sm:flex-col lg:flex-row gap-2">
           <Link
             className="flex-1 border bg-zinc-700/20 text-nowrap p-4 hover:bg-zinc-700/40 rounded-lg items-center justify-center flex transition"
-            href="/doc/Luis_Galleguillos_Full_Stack_Developer.pdf"
+            href="/doc/Luis_Galleguillos_fullstack_developer.pdf"
             target="_blank"
           >
             <span className="text-zinc-300">🇺🇲 Resume</span>
           </Link>
           <Link
             className="flex-1 border bg-zinc-700/20 text-nowrap p-4 hover:bg-zinc-700/40 rounded-lg items-center justify-center flex transition"
-            href="/doc/Luis_Galleguillos_Desenvolvedor_Full_Stack.pdf"
+            href="/doc/Luis_Galleguillos_fullstack_developer_ptbr.pdf"
             target="_blank"
           >
             <span className="text-zinc-300">🇧🇷 Currículo</span>
           </Link>
         </div>
-        <div className="flex-1 bg-zinc-100 rounded-lg  flex items-center justify-center p-4 relative overflow-hidden">
+        <Link
+          href="https://easypage.galleguillos.com.br/"
+          className="flex-1 bg-zinc-100 rounded-lg  flex flex-col items-center justify-center p-4 relative overflow-hidden"
+        >
           <Image
-            alt="Luis Felipe Galleguillos linkedin"
-            src="/colorful.svg"
-            height={48}
-            width={48}
-            className="absolute top-0 left-0 max-h-full"
-          />
-          <Image
-            alt="Luis Felipe Galleguillos linkedin"
-            src="/colorful-2.svg"
-            height={48}
-            width={48}
-            className="absolute bottom-0 right-0 max-h-full"
+            alt="easy page logo"
+            src="/easypage.logo.png"
+            height={120}
+            width={120}
           />
           <span className="text-zinc-800 font-bold ">{dict.banner_title}</span>
-        </div>
+        </Link>
       </div>
     </div>
   );
